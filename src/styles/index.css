@@ -1,1 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
 @import "tailwindcss";
+
+:root {
+  --heading: #252525;
+  --paragraph: #777777;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display SC", serif;
+}
+
+p,
+a,
+input,
+textarea,
+select {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
