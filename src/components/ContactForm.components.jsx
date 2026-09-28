@@ -24,7 +24,7 @@ const ContactForm = () => {
       >
         Fields marked with * are required
       </p>
-      <p className="">{error.message}</p>
+      {error && <p className="">{error.message}</p>}
     </form>
   );
 };
