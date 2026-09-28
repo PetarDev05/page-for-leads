@@ -56,6 +56,8 @@ const AppContextProvider = ({ children }) => {
 
     try {
       setLoading(true);
+      console.log(formData);
+
       const response = await submitUserInput(formData);
 
       console.log(response);
