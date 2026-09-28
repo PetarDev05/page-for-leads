@@ -58,6 +58,8 @@ const AppContextProvider = ({ children }) => {
       setLoading(true);
       const response = await submitUserInput(formData);
 
+      console.log(response);
+
       if (response.success) {
         toast.success(response.message);
         setFormData({
