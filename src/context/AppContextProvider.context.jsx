@@ -77,6 +77,8 @@ const AppContextProvider = ({ children }) => {
           username: "",
         });
       } else {
+        console.log(response);
+
         toast.error(response.message);
       }
     } catch (error) {
