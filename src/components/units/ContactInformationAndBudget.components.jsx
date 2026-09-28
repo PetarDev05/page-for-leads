@@ -16,7 +16,7 @@ const ContactInformationAndBudget = () => {
         onChange={handleFormData}
         value={formData.email}
         className="w-full flex-1 min-w-0 px-5 py-2 rounded-full text-(--paragraph) border border-(--border) outline-none focus:border-(--main3)"
-        placeholder="E-mail"
+        placeholder="E-mail *"
       />
       <input
         type="phone"
@@ -24,7 +24,7 @@ const ContactInformationAndBudget = () => {
         onChange={handleFormData}
         value={formData.phoneNumber}
         className="w-full flex-1 min-w-0 px-5 py-2 rounded-full text-(--paragraph) border border-(--border) outline-none focus:border-(--main3)"
-        placeholder="Phone Number"
+        placeholder="Phone Number *"
       />
       <div className="w-full flex flex-col items-center gap-3">
         <select
@@ -34,7 +34,7 @@ const ContactInformationAndBudget = () => {
           id="budget"
           className="w-full flex-1 min-w-0 px-5 py-2 rounded-full text-(--paragraph) border border-(--border) outline-none focus:border-(--main3)"
         >
-          <option value="">Current budget</option>
+          <option value="">Current budget *</option>
           <option value="Ispod $50">Under $50</option>
           <option value="$50 - $100">$50 - $100</option>
           <option value="$100 - $200">$100 - $200</option>

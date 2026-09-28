@@ -15,7 +15,7 @@ const PersonalInformation = () => {
         value={formData.name}
         type="text"
         className="w-full px-5 py-2 rounded-full text-(--paragraph) border border-(--border) outline-none focus:border-(--main1)"
-        placeholder="Frist name"
+        placeholder="Frist name *"
       />
       <input
         type="text"
@@ -23,7 +23,7 @@ const PersonalInformation = () => {
         onChange={handleFormData}
         value={formData.lastName}
         className="w-full px-5 py-2 rounded-full text-(--paragraph) border border-(--border) outline-none focus:border-(--main1)"
-        placeholder="Last name"
+        placeholder="Last name *"
       />
       <div className="w-full flex flex-col min-[500px]:flex-row items-center gap-7">
         <input

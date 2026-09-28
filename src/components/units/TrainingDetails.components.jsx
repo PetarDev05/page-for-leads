@@ -8,7 +8,7 @@ const TrainingDetails = () => {
   return (
     <div className="w-full flex flex-col items-end gap-7 text-(--form-text)">
       <p className="w-full text-lg text-(--paragraph) pl-3">
-        Training details:
+        Training details *:
       </p>
       <div
         id="goal"
