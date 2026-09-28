@@ -1,22 +1,49 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @import "tailwindcss";
 
 :root {
+  --primary: #286fda;
+  --main1: #6da7ff;
+  --main2: #f069ba;
+  --main3: #efaf5b;
+  --main1-light: #aaccff;
+  --main2-light: #ffa8dc;
+  --main3-light: #ffd6a1;
+  --bg: #efefef;
+  --white: #fff;
+
   --heading: #252525;
-  --paragraph: #777777;
+  --paragraph: #747474;
+  --bg-card: #c7c7c7;
+  --bg-card-shine: #eeeeee;
+  --button-text: #fff;
+  --bg-form: #f7f7f7;
+  --border: #dadada;
+
+  --instagram: #ff0069;
+  --facebook: #1877f2;
+  --linkedin: #0072b1;
+  --tik-tok: #131313;
+  
+  --success: #3bd29b;
+  --error: #ef3333;
 }
 
-h1,
-h2,
-h3 {
-  font-family: "Playfair Display SC", serif;
+* {
+  font-family: "Poppins";
+  scrollbar-width: none;
+  scroll-behavior: smooth;
 }
 
-p,
-a,
-input,
-textarea,
+#username {
+  display: none !important;
+  visibility: hidden;
+  position: absolute;
+  top: -9999px;
+}
+
 select {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  appearance: none;
+  cursor: pointer;
 }

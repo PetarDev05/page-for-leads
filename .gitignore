@@ -25,3 +25,5 @@ test*
 *.njsproj
 *.sln
 *.sw?
+
+.vercel
