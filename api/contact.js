@@ -37,8 +37,6 @@ export default async function sendEmail(req, res) {
       });
     }
 
-    console.log(error);
-
     return res.status(500).json({
       success: false,
       message: "Something went wrong. Try again later.",

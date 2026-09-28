@@ -32,7 +32,7 @@ const AppContextProvider = ({ children }) => {
   const slideForm = (flag) => {
     if (flag === "prev" && formStage > 1) {
       setFormStage(formStage - 1);
-    } else if (flag === "next" && formStage < 6) {
+    } else if (flag === "next" && formStage < 3) {
       setFormStage(formStage + 1);
     } else {
       setFormStage(1);
@@ -77,12 +77,9 @@ const AppContextProvider = ({ children }) => {
           username: "",
         });
       } else {
-        console.log(response);
-
         toast.error(response.message);
       }
     } catch (error) {
-      console.log(error);
       toast.error("Something went wrong, please try again later.");
       setError(error);
     } finally {

@@ -4,7 +4,7 @@ import PersonalInformation from "./units/PersonalInformation.components.jsx";
 import TrainingDetails from "./units/TrainingDetails.components.jsx";
 
 const ContactForm = () => {
-  const { formStage, handleSubmit, error } = useAppContext();
+  const { formStage, handleSubmit } = useAppContext();
 
   return (
     <form
@@ -24,7 +24,6 @@ const ContactForm = () => {
       >
         Fields marked with * are required
       </p>
-      {error && <p className="">{error.message}</p>}
     </form>
   );
 };
