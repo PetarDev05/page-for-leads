@@ -56,11 +56,7 @@ const AppContextProvider = ({ children }) => {
 
     try {
       setLoading(true);
-      console.log(formData);
-
       const response = await submitUserInput(formData);
-
-      console.log(response);
 
       if (response.success) {
         toast.success(response.message);
@@ -84,6 +80,7 @@ const AppContextProvider = ({ children }) => {
         toast.error(response.message);
       }
     } catch (error) {
+      console.log(error);
       toast.error("Something went wrong, please try again later.");
       setError(error);
     } finally {
