@@ -8,7 +8,7 @@ const TrainingDetails = () => {
   return (
     <div className="w-full flex flex-col items-end gap-7 text-(--form-text)">
       <p className="w-full text-lg text-(--paragraph) pl-3">
-        Training details *:
+        Iskustvo i ciljevi:
       </p>
       <div
         id="goal"
@@ -17,91 +17,91 @@ const TrainingDetails = () => {
         <div className="w-full flex flex-row items-center gap-3">
           <span
             name="mainGoals"
-            onClick={() => setGoal("Weight Loss")}
-            value="Weight Loss"
-            className={`w-4.5 h-4.5 border border-(--main2) rounded-[3px] flex items-center justify-center ${formData?.mainGoals?.includes("Weight Loss") ? "bg-(--main2)" : ""}`}
+            onClick={() => setGoal("Gubitak kilograma")}
+            value="Gubitak kilograma"
+            className={`w-4.5 h-4.5 border border-(--main2) rounded-[3px] cursor-pointer flex items-center justify-center ${formData?.mainGoals?.includes("Gubitak kilograma") ? "bg-(--main2)" : ""}`}
           >
-            {formData?.mainGoals?.includes("Weight Loss") ? (
+            {formData?.mainGoals?.includes("Gubitak kilograma") ? (
               <FaCheck className="text-[10px] text-white" />
             ) : (
               ""
             )}
           </span>
-          <p className="text-(--paragraph)">Weight Loss</p>
+          <p className="text-(--paragraph)">Gubitak kilograma</p>
         </div>
         <div className="w-full flex flex-row items-center gap-3">
           <span
             name="mainGoals"
-            onClick={() => setGoal("Building Muscle")}
-            value="Building Muscle"
-            className={`w-4.5 h-4.5 border border-(--main2) rounded-[3px] flex items-center justify-center ${formData?.mainGoals?.includes("Building Muscle") ? "bg-(--main2)" : ""}`}
+            onClick={() => setGoal("Izgradnja mišića")}
+            value="Izgradnja mišića"
+            className={`w-4.5 h-4.5 border border-(--main2) rounded-[3px] cursor-pointer flex items-center justify-center ${formData?.mainGoals?.includes("Izgradnja mišića") ? "bg-(--main2)" : ""}`}
           >
-            {formData?.mainGoals?.includes("Building Muscle") ? (
+            {formData?.mainGoals?.includes("Izgradnja mišića") ? (
               <FaCheck className="text-[10px] text-white" />
             ) : (
               ""
             )}
           </span>
-          <p className="text-(--paragraph)">Building Muscle</p>
+          <p className="text-(--paragraph)">Izgradnja mišića</p>
         </div>
         <div className="w-full flex flex-row items-center gap-3">
           <span
             name="mainGoals"
-            onClick={() => setGoal("Improving Cardio")}
-            value="Improving Cardio"
-            className={`w-4.5 h-4.5 border border-(--main2) rounded-[3px] flex items-center justify-center ${formData?.mainGoals?.includes("Improving Cardio") ? "bg-(--main2)" : ""}`}
+            onClick={() => setGoal("Poboljšanje kondicije")}
+            value="Poboljšanje kondicije"
+            className={`w-4.5 h-4.5 border border-(--main2) rounded-[3px] cursor-pointer flex items-center justify-center ${formData?.mainGoals?.includes("Poboljšanje kondicije") ? "bg-(--main2)" : ""}`}
           >
-            {formData?.mainGoals?.includes("Improving Cardio") ? (
+            {formData?.mainGoals?.includes("Poboljšanje kondicije") ? (
               <FaCheck className="text-[10px] text-white" />
             ) : (
               ""
             )}
           </span>
-          <p className="text-(--paragraph)">Improving Cardio</p>
+          <p className="text-(--paragraph)">Poboljšanje kondicije</p>
         </div>
         <div className="w-full flex flex-row items-center gap-3">
           <span
             name="mainGoals"
-            onClick={() => setGoal("Increasing Strength")}
-            value="Increasing Strength"
-            className={`w-4.5 h-4.5 border border-(--main2) rounded-[3px] flex items-center justify-center ${formData?.mainGoals?.includes("Increasing Strength") ? "bg-(--main2)" : ""}`}
+            onClick={() => setGoal("Povećanje snage")}
+            value="Povećanje snage"
+            className={`w-4.5 h-4.5 border border-(--main2) rounded-[3px] cursor-pointer flex items-center justify-center ${formData?.mainGoals?.includes("Povećanje snage") ? "bg-(--main2)" : ""}`}
           >
-            {formData?.mainGoals?.includes("Increasing Strength") ? (
+            {formData?.mainGoals?.includes("Povećanje snage") ? (
               <FaCheck className="text-[10px] text-white" />
             ) : (
               ""
             )}
           </span>
-          <p className="text-(--paragraph)">Increasing Strength</p>
+          <p className="text-(--paragraph)">Povećanje snage</p>
         </div>
         <div className="w-full flex flex-row items-center gap-3">
           <span
-            onClick={() => setGoal("Sports Performance")}
-            value="Sports Performance"
-            className={`w-4.5 h-4.5 border border-(--main2) rounded-[3px] flex items-center justify-center ${formData?.mainGoals?.includes("Sports Performance") ? "bg-(--main2)" : ""}`}
+            onClick={() => setGoal("Sportske performanse")}
+            value="Sportske performanse"
+            className={`w-4.5 h-4.5 border border-(--main2) rounded-[3px] cursor-pointer flex items-center justify-center ${formData?.mainGoals?.includes("Sportske performanse") ? "bg-(--main2)" : ""}`}
           >
-            {formData?.mainGoals?.includes("Sports Performance") ? (
+            {formData?.mainGoals?.includes("Sportske performanse") ? (
               <FaCheck className="text-[10px] text-white" />
             ) : (
               ""
             )}
           </span>
-          <p className="text-(--paragraph)">Sports Performance</p>
+          <p className="text-(--paragraph)">Sportske performanse</p>
         </div>
         <div className="w-full flex flex-row items-center gap-3">
           <span
             name="mainGoals"
-            onClick={() => setGoal("Other")}
-            value="Other"
-            className={`w-4.5 h-4.5 border border-(--main2) rounded-[3px] flex items-center justify-center ${formData?.mainGoals?.includes("Other") ? "bg-(--main2)" : ""}`}
+            onClick={() => setGoal("Drugo")}
+            value="Drugo"
+            className={`w-4.5 h-4.5 border border-(--main2) rounded-[3px] cursor-pointer flex items-center justify-center ${formData?.mainGoals?.includes("Drugo") ? "bg-(--main2)" : ""}`}
           >
-            {formData?.mainGoals?.includes("Other") ? (
+            {formData?.mainGoals?.includes("Drugo") ? (
               <FaCheck className="text-[10px] text-white" />
             ) : (
               ""
             )}
           </span>
-          <p className="text-(--paragraph)">Other</p>
+          <p className="text-(--paragraph)">Drugo</p>
         </div>
       </div>
       <select
@@ -112,16 +112,16 @@ const TrainingDetails = () => {
         className="w-full flex-1 min-w-0 px-5 py-2 rounded-full text-(--paragraph) border border-(--border) outline-none focus:border-(--main2)"
       >
         <option value="" className="">
-          Experience Level
+          Nivo iskustva
         </option>
-        <option value="Begginer" className="">
-          Begginer
+        <option value="Početnik" className="">
+          Početnik
         </option>
-        <option value="Intermadiate" className="">
-          Intermadiate
+        <option value="Srednji" className="">
+          Srednji
         </option>
-        <option value="Advanced" className="">
-          Advanced
+        <option value="Napredan" className="">
+          Napredan
         </option>
       </select>
       <select
@@ -132,19 +132,19 @@ const TrainingDetails = () => {
         className="w-full flex-1 min-w-0 px-5 py-2 rounded-full text-(--paragraph) border border-(--border) outline-none focus:border-(--main2)"
       >
         <option value="" className="">
-          When would you like to start?
+          Kada biste želeli da počnete?
         </option>
-        <option value="As soon as possible" className="">
-          As soon as possible
+        <option value="Što pre moguće" className="">
+          Što pre moguće
         </option>
-        <option value="In the next 2 weeks" className="">
-          In the next 2 weeks
+        <option value="U naredne 2 nedelje" className="">
+          U naredne 2 nedelje
         </option>
-        <option value="Next month" className="">
-          Next month
+        <option value="Sledeći mesec" className="">
+          Sledeći mesec
         </option>
-        <option value="Just exploring" className="">
-          Just exploring
+        <option value="Samo istražujem" className="">
+          Samo istražujem
         </option>
       </select>
       <div className="w-full flex flex-row items-center justify-between">
@@ -154,14 +154,14 @@ const TrainingDetails = () => {
           className="flex flex-row items-center gap-1 px-5 py-2 rounded-full text-(--button-text) bg-(--main2) font-semibold cursor-pointer"
         >
           <IoIosArrowRoundBack className="text-2xl" />
-          Back
+          Nazad
         </button>
         <button
           onClick={() => slideForm("next")}
           type="button"
           className="flex flex-row items-center gap-1 px-5 py-2 rounded-full text-(--button-text) bg-(--main2) font-semibold cursor-pointer"
         >
-          Next
+          Dalje
           <IoIosArrowRoundForward className="text-2xl" />
         </button>
       </div>

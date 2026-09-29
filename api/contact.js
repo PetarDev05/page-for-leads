@@ -6,11 +6,11 @@ import { validateFormat } from "../lib/services/validateFormat.lib.js";
 export default async function sendEmail(req, res) {
   try {
     if (req.method != "POST") {
-      throw new Error("Method not allowed.");
+      throw new Error("Neispravna metoda.");
     }
 
     if (req.body.username) {
-      throw new Error("Access denied.");
+      throw new Error("Pristup odbijen.");
     }
 
     const formData = req.body;
@@ -26,7 +26,7 @@ export default async function sendEmail(req, res) {
 
     res.status(200).json({
       success: true,
-      message: "Message is sent. Thanks for reaching out.",
+      message: "Prijava je poslata. Javiću vam se uskoro.",
       data: result,
     });
   } catch (error) {
@@ -39,7 +39,7 @@ export default async function sendEmail(req, res) {
 
     return res.status(500).json({
       success: false,
-      message: "Something went wrong. Try again later.",
+      message: "Nešto nije u redu. Pokušaj te kasnije ponovo.",
     });
   }
 }

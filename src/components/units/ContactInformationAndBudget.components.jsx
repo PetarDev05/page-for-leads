@@ -8,7 +8,7 @@ const ContactInformationAndBudget = () => {
   return (
     <div className="w-full flex flex-col items-end gap-7 text-(--form-text)">
       <p className="w-full text-lg text-(--paragraph) pl-3">
-        Contact Information:
+        Kontakt informacije:
       </p>
       <input
         type="email"
@@ -24,7 +24,7 @@ const ContactInformationAndBudget = () => {
         onChange={handleFormData}
         value={formData.phoneNumber}
         className="w-full flex-1 min-w-0 px-5 py-2 rounded-full text-(--paragraph) border border-(--border) outline-none focus:border-(--main3)"
-        placeholder="Phone Number *"
+        placeholder="Broj telefona *"
       />
       <div className="w-full flex flex-col items-center gap-3">
         <select
@@ -34,11 +34,11 @@ const ContactInformationAndBudget = () => {
           id="budget"
           className="w-full flex-1 min-w-0 px-5 py-2 rounded-full text-(--paragraph) border border-(--border) outline-none focus:border-(--main3)"
         >
-          <option value="">Current budget *</option>
-          <option value="Ispod $50">Under $50</option>
+          <option value="">Trenutni budžet *</option>
+          <option value="Ispod $50">Ispod $50</option>
           <option value="$50 - $100">$50 - $100</option>
           <option value="$100 - $200">$100 - $200</option>
-          <option value="Preko $200">Above $200</option>
+          <option value="Preko $200">Preko $200</option>
         </select>
       </div>
       <textarea
@@ -47,7 +47,7 @@ const ContactInformationAndBudget = () => {
         value={formData.message}
         id=""
         className="w-full flex-1 min-w-0 px-5 py-2 rounded-2xl text-(--paragraph) border border-(--border) outline-none focus:border-(--main3) min-h-30 resize-none"
-        placeholder="Any questions?"
+        placeholder="Dodatno pitanje?"
       ></textarea>
       <input
         id="username"
@@ -63,7 +63,7 @@ const ContactInformationAndBudget = () => {
           className="flex flex-row items-center gap-1 px-5 py-2 rounded-full text-(--button-text) bg-(--main3) font-semibold cursor-pointer"
         >
           <IoIosArrowRoundBack className="text-2xl" />
-          Back
+          Nazad
         </button>
         <button
           type="submit"
@@ -73,7 +73,7 @@ const ContactInformationAndBudget = () => {
             <RiLoaderLine className="animate-spin text-lg text-(--white)" />
           ) : (
             <>
-              Submit
+              Pošalji
               <RiSendInsLine className="text-lg" />
             </>
           )}
